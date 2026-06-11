@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git & GitHub Visual Guide</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <h2>Git Guide</h2>
+
+        <ul>
+            <li><a href="#git">Git</a></li>
+            <li><a href="#workflow">Workflow</a></li>
+            <li><a href="#commands">Commands</a></li>
+            <li><a href="#practice">Practice</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+
+        <div class="logos">
+            <img src="images/git-logo.png" alt="Git">
+            <img src="images/github-logo.png" alt="GitHub">
+        </div>
+
+        <h1>🚀 Git & GitHub Visual Cheat Sheet</h1>
+
+        <p>
+            Learn Git and GitHub visually through workflows,
+            examples, commands and real-world analogies.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#workflow">
+                <button>🔄 Workflow</button>
+            </a>
+
+            <a href="#commands">
+                <button>💻 Commands</button>
+            </a>
+
+            <a href="#practice">
+                <button>🧪 Practice</button>
+            </a>
+
+        </div>
+
+    </header>
+
+    <section id="git" class="card">
+
+        <h2>Why Do We Need Git?</h2>
+
+        <div class="compare">
+
+            <div class="bad">
+                <h3>❌ Without Git</h3>
+
+                <pre>
+project_final
+project_final2
+project_final_latest
+project_final_final
+                </pre>
+
+            </div>
+
+            <div class="good">
+                <h3>✅ With Git</h3>
+
+                <pre>
+Commit History
+
+v1
+v2
+v3
+v4
+                </pre>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Git vs GitHub</h2>
+
+        <table>
+
+            <tr>
+                <th>Git</th>
+                <th>GitHub</th>
+            </tr>
+
+            <tr>
+                <td>Version Control System</td>
+                <td>Cloud Platform</td>
+            </tr>
+
+            <tr>
+                <td>Tracks Changes</td>
+                <td>Stores Repositories</td>
+            </tr>
+
+            <tr>
+                <td>Runs Locally</td>
+                <td>Runs Online</td>
+            </tr>
+
+            <tr>
+                <td>Version History</td>
+                <td>Collaboration</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <section id="workflow" class="card">
+
+        <h2>Git Workflow</h2>
+
+        <div class="workflow">
+
+            <div class="step">Edit File</div>
+            <div class="arrow">↓</div>
+
+            <div class="step">git add</div>
+            <div class="arrow">↓</div>
+
+            <div class="step">Staging Area</div>
+            <div class="arrow">↓</div>
+
+            <div class="step">git commit</div>
+            <div class="arrow">↓</div>
+
+            <div class="step">Local Repository</div>
+            <div class="arrow">↓</div>
+
+            <div class="step">git push</div>
+            <div class="arrow">↓</div>
+
+            <div class="step github">GitHub</div>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Complete Git Journey</h2>
+
+        <div class="journey">
+
+            <div class="journey-step">📄 Create File</div>
+            <div class="journey-arrow">→</div>
+
+            <div class="journey-step">✏️ Modify File</div>
+            <div class="journey-arrow">→</div>
+
+            <div class="journey-step">➕ git add</div>
+            <div class="journey-arrow">→</div>
+
+            <div class="journey-step">📸 git commit</div>
+            <div class="journey-arrow">→</div>
+
+            <div class="journey-step">☁️ git push</div>
+            <div class="journey-arrow">→</div>
+
+            <div class="journey-step github-step">🐙 GitHub</div>
+
+        </div>
+
+    </section>
+
+    <section id="commands" class="card">
+
+        <h2>Essential Commands</h2>
+
+        <div class="commands">
+
+            <div class="command">
+                <h3>git init</h3>
+                <p>Initialize Repository</p>
+            </div>
+
+            <div class="command">
+                <h3>git status</h3>
+                <p>Check Project Status</p>
+            </div>
+
+            <div class="command">
+                <h3>git add .</h3>
+                <p>Stage Files</p>
+            </div>
+
+            <div class="command">
+                <h3>git commit -m</h3>
+                <p>Create Snapshot</p>
+            </div>
+
+            <div class="command">
+                <h3>git push</h3>
+                <p>Upload To GitHub</p>
+            </div>
+
+            <div class="command">
+                <h3>git pull</h3>
+                <p>Download Latest Changes</p>
+            </div>
+
+            <div class="command">
+                <h3>git clone</h3>
+                <p>Copy Repository</p>
+            </div>
+
+            <div class="command">
+                <h3>git log</h3>
+                <p>View Commit History</p>
+            </div>
+
+            <div class="command">
+                <h3>git branch</h3>
+                <p>List/Create Branches</p>
+            </div>
+
+            <div class="command">
+                <h3>git checkout</h3>
+                <p>Switch Branches</p>
+            </div>
+
+            <div class="command">
+                <h3>git merge</h3>
+                <p>Combine Branches</p>
+            </div>
+
+            <div class="command">
+                <h3>git stash</h3>
+                <p>Temporarily Save Changes</p>
+            </div>
+
+            <div class="command">
+                <h3>git fetch</h3>
+                <p>Download Changes Without Merging</p>
+            </div>
+
+            <div class="command">
+                <h3>git remote -v</h3>
+                <p>Show Connected Remote Repositories</p>
+            </div>
+
+            <div class="command">
+                <h3>git reset</h3>
+                <p>Undo Changes</p>
+            </div>
+
+            <div class="command">
+                <h3>git rebase</h3>
+                <p>Reapply Commits on Another Base</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+    <h2>Git Command Categories</h2>
+
+    <table>
+
+    <tr>
+    <th>Category</th>
+    <th>Commands</th>
+    </tr>
+
+    <tr>
+    <td>Repository Setup</td>
+    <td>git init, git clone</td>
+    </tr>
+
+    <tr>
+    <td>Tracking Changes</td>
+    <td>git status, git add</td>
+    </tr>
+
+    <tr>
+    <td>Saving Work</td>
+    <td>git commit</td>
+    </tr>
+
+    <tr>
+    <td>Remote Repositories</td>
+    <td>git push, git pull, git fetch</td>
+    </tr>
+
+    <tr>
+    <td>Branching</td>
+    <td>git branch, git checkout, git merge</td>
+    </tr>
+
+    <tr>
+    <td>Advanced</td>
+    <td>git stash, git reset, git rebase</td>
+    </tr>
+
+    </table>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Important Terms</h2>
+
+        <ul>
+            <li><b>Repository:</b> Project Folder</li>
+            <li><b>Commit:</b> Save Point</li>
+            <li><b>Branch:</b> Parallel Development Path</li>
+            <li><b>Merge:</b> Combine Changes</li>
+            <li><b>Remote:</b> GitHub Repository</li>
+        </ul>
+
+    </section>
+
+    <section id="practice" class="card">
+
+        <h2>Practice Exercise</h2>
+
+        <pre>
+mkdir demo
+
+cd demo
+
+git init
+
+git add .
+
+git commit -m "first commit"
+
+git push
+        </pre>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Git Quiz</h2>
+
+        <div class="question">
+
+            <h3>1. Which command stages files?</h3>
+
+            <button onclick="checkAnswer(this,true)">git add .</button>
+            <button onclick="checkAnswer(this,false)">git push</button>
+            <button onclick="checkAnswer(this,false)">git log</button>
+
+        </div>
+
+        <hr>
+
+        <div class="question">
+
+            <h3>2. Which command uploads code to GitHub?</h3>
+
+            <button onclick="checkAnswer(this,false)">git commit</button>
+            <button onclick="checkAnswer(this,true)">git push</button>
+            <button onclick="checkAnswer(this,false)">git status</button>
+
+        </div>
+
+        <hr>
+
+        <div class="question">
+
+            <h3>3. What is GitHub?</h3>
+
+            <button onclick="checkAnswer(this,false)">Programming Language</button>
+            <button onclick="checkAnswer(this,true)">Cloud Repository Platform</button>
+            <button onclick="checkAnswer(this,false)">Database</button>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Created by Tanvi Kirloskar</p>
+        <p>AWS Internship Learning Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
